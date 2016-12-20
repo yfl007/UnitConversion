@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.unitcovert.MainActivity" >
+
+
+    <Spinner 
+        android:id="@+id/measure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        />
+    <Spinner 
+        android:id="@+id/unit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_below="@id/measure"/>
+    <LinearLayout 
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:orientation="horizontal"
+        android:layout_below="@id/unit">
+	      <EditText
+	        android:id="@+id/input_edittext"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/item_height"
+	        android:layout_weight="6"
+	        android:inputType="numberDecimal"
+	        android:hint="0.0"
+	        android:textSize="@dimen/general_font"/>   
+	     <TextView
+	        android:id="@+id/input_unit"
+	        android:layout_width="0dp"
+	        android:layout_height="@dimen/item_height"
+	        android:layout_weight="1"
+	        android:textSize="@dimen/unit_font"/>          
+    </LinearLayout>
+  	<LinearLayout 
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:orientation="horizontal"
+        android:layout_below="@id/input">
+		<TextView
+		   android:id="@+id/result_text"
+		   android:layout_width="0dp"
+		   android:layout_height="@dimen/item_height"
+		   android:layout_weight="6"
+		   android:text="0.0"
+		   android:textSize="@dimen/general_font"/>    
+		<TextView
+		   android:id="@+id/result_unit"
+		   android:layout_width="0dp"
+		   android:layout_height="@dimen/item_height"
+		   android:layout_weight="1"
+		   android:textSize="@dimen/unit_font"/> 		   	    
+  	</LinearLayout>   
+       
+</RelativeLayout>

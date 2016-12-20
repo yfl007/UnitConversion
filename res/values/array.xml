@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="measure_array">
+        <item>Length</item>
+        <item>Weight</item>
+    </string-array>
+    <string-array name="length_unit_array">
+        <item>km-mile</item>
+        <item>m-yard</item>
+        <item>m-foot</item>
+        <item>cm-inch</item>                
+    </string-array>    
+    <string-array name="weight_unit_array">
+        <item>kg-pound</item>
+        <item>kg-ounce</item>               
+    </string-array>      
+</resources>
